@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Monedas</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1 id="titulo">Conversor de Monedas Nacional</h1>
+    <div class="card">
+        <h2>PESOS CLP</h2>
+        <input type="number" placeholder="Ingrese el monto en CLP" id="montoPesos">
+        <h4>Moneda a convertir:</h4>
+        <select name="moneda" id="seleccionador">
+            <option selected="true" disabled="disabled">Seleccione moneda</option>
+            <option value="dolar">Dólar Americano (USD)</option>
+            <option value="euro">Euro (EUR)</option>
+            <option value="uf">Unidad de Fomento (UF)</option>
+        </select>
+        <button id="boton">Buscar</button>
+        <h5>Resultado: <span id="resultado"></span></h5>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

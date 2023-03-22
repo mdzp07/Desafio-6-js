@@ -1,0 +1,48 @@
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: darkred;
+    color: white;
+}
+
+#titulo{
+    text-align: center;
+}
+
+.card {
+    width: 280px;
+    height: 340px;
+    text-align: center;
+    background-color: grey;
+    margin: auto;  
+    box-shadow: 0px 10px 10px -8px honeydew;
+}
+
+.card h2{
+    padding-top: 40px;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+
+select{
+    width: 200px;
+    height: 25px;
+}
+
+button{
+    font-size: 11pt;
+    width: 200px;
+    height: 30px;
+    background-color: rebeccapurple;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-top: 20px;
+}
+
+select option {
+    text-align: center;
+}
