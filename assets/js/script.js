@@ -20,15 +20,15 @@ async function calculo() {
     try {
         await apiMonedas();
         if (monedaSeleccionada.value == "dolar" && montoPesos.value > 0) {
-            resultado.innerHTML = (montoPesos.value / valorUSD).toFixed(2) + " USD";
+            resultado.innerHTML = (montoPesos.value / valorUSD).toFixed(2).replace(".", ",") + " USD";
 
         }
         else if (monedaSeleccionada.value == "euro" && montoPesos.value > 0) {
-            resultado.innerHTML = (montoPesos.value / valorEUR).toFixed(2) + " EUR";
+            resultado.innerHTML = (montoPesos.value / valorEUR).toFixed(2).replace(".", ",") + " EUR";
 
         }
         else if (monedaSeleccionada.value == "uf" && montoPesos.value > 0) {
-            resultado.innerHTML = (montoPesos.value / valorUF).toFixed(2) + " UF";
+            resultado.innerHTML = (montoPesos.value / valorUF).toFixed(2).replace(".", ",") + " UF";
         }
         else {
             alert("Seleccione una moneda válida o verifique que el monto ingresado sea mayor a cero.");
@@ -36,7 +36,7 @@ async function calculo() {
     }
     catch {
         alert("Lo sentimos, estamos teniendo problemas, intente de nuevo mas tarde.")
-        console.log("Hay un error al traer los datos de la API")
+        console.log("Hay un error con la API")
     }
 }
 
